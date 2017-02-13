@@ -1,4 +1,4 @@
-# 3460:421/521 Compiler design
+# Compiler Design (3460:421)
 # Spring 2017
 
 
