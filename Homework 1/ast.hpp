@@ -2,16 +2,17 @@
 #define AST_HPP
 #include <cassert>
 
+// Language types
 struct Bool_type;
 struct Int_type;
 
-struct true_expr;                        // true
-struct false_expr;                       // false
+struct Bool_expr;                        // Bool 
 struct int_expr;                         // integer literals
 struct and_expr;                         // AND
 struct or_expr;                          // inclusive OR
 struct xor_expr;                         // exclusive OR
 struct not_expr;                         // logical negation
+
 struct if_then_else_expr;                // conditional
 struct equal_to_expr;                    // equal to
 struct not_equal_to_expr;                // not equal to
@@ -19,6 +20,7 @@ struct less_than_expr;                   // less than (<)
 struct greater_than_expr;                // greater than (>)
 struct less_than_or_equal_to_expr;       // <=
 struct greater_than_or_equal_to_expr;    // >=
+
 struct add_expr;                         // addition
 struct sub_expr;                         // subtraction
 struct multi_expr;                       // multiplication
