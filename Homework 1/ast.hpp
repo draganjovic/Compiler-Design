@@ -80,8 +80,8 @@ struct bool_expr : Expr {
 };
 
 struct int_expr : Expr {
-  int value;
-  int_expr(int a) : value(a) {}
+  int literal;
+  int_expr(int a) : literal(a) {}
   void accept(Visitor& v) { return v.visit(this); }
 };
 
