@@ -1,4 +1,4 @@
-# Spring 2017 - Compiler Design (3460:421)
+Alt-H1 Spring 2017 - Compiler Design (3460:421)
 ##`Homework 1 - Implement an AST for a small language`
 
 ###Overview
