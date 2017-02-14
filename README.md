@@ -15,11 +15,12 @@
 
 #Tools used
  
-• MacBook Pro (Retina, 13-inch, Early 2015)
-• Terminal
-• Emacs
-• Atom
-• Xcode
+1. MacBook Pro (Retina, 13-inch, Early 2015)
+2. Dual Monitor Setup
+3. Terminal
+4. Emacs
+5. Atom
+6. Xcode
 
 
 
