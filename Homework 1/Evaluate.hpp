@@ -1,8 +1,6 @@
-#ifndef EVALUATE_HPP
-#define EVALUATE_HPP
-
 #include "ast.hpp"
 #include "value.hpp"
+#include <cassert>
 
 Value eval(Expr* e) {
   struct V : Expr::Visitor {
