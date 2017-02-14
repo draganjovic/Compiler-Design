@@ -29,6 +29,12 @@ struct div_expr;                         // integer division
 struct rem_expr;                         // remainder of division
 struct arithmetic_neg_expr;              // arithmetic negation
 
+// Creating my own data types using enum
+enum struct Types {
+  Bool_type,
+  Int_type,
+};
+
 // Class/Structure for Type
 struct Type {
   struct Visitor;
