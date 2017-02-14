@@ -1,6 +1,5 @@
 #ifndef AST_HPP
 #define AST_HPP
-
 #include <cassert>
 
 // Language types - Two types: bools & ints
