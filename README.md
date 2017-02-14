@@ -13,6 +13,10 @@
 2. Verify and check types
 3. Print expressions
 
+#Tools used
+
+MacBook Pro (Retina, 13-inch, Early 2015)
+
 
 
 
