@@ -30,9 +30,7 @@ bool need_paren(Expr* e) {
     void visit(arithmetic_neg_expr* e) { p = true ; }
   };
 
-
-
-V vis;
+  V vis;
    e->accept(vis);
    return vis.p;
 
