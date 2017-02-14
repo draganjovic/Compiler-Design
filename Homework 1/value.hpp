@@ -2,13 +2,13 @@
 #define VALUE_HPP
 
 enum Types {
-  boolean_type,
   integer_type,
+  boolean_type,
 };
 
 union result {
-  bool b;
   int i;
+  bool b;
 };
 
 struct Value {
