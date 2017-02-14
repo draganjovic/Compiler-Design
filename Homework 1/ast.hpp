@@ -192,7 +192,7 @@ struct multi_expr : Expr {
 struct div_expr : Expr {
   Expr* e1;
   Expr* e2;
-  div_expr(Expr* e1, Expr* e2) : e1(e1), e2(e2)
+  div_expr(Expr* e1, Expr* e2) : e1(e1), e2(e2) {}
   void accept(Visitor& v) { return v.visit(this); }
 };
 
@@ -205,7 +205,7 @@ struct rem_expr : Expr {
 
 struct arithmetic_neg_expr : Expr {
   Expr* e1;
-  arithmetic_neg_expr(Expr* e1 : e1(e1) {}
+  arithmetic_neg_expr(Expr* e1) : e1(e1) {}
   void accept(Visitor& v) { return v.visit(this); }
 };
 
