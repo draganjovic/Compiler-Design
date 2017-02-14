@@ -14,8 +14,12 @@
 3. Print expressions
 
 #Tools used
-
-MacBook Pro (Retina, 13-inch, Early 2015)
+ 
+• MacBook Pro (Retina, 13-inch, Early 2015)
+• Terminal
+• Emacs
+• Atom
+• Xcode
 
 
 
