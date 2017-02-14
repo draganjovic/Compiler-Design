@@ -3,7 +3,7 @@
 
 enum Types {
   bool_type,
-  int_type,
+  integer_type,
 };
 
 union result {
