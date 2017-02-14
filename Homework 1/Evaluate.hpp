@@ -33,7 +33,7 @@ Value eval(Expr* e) {
     void visit(if_then_else_expr* e) {
       val.kind = Types::boolean_type;
       val.data.b = eval(e->e1).data.b | eval(e->e2).data.b | eval(e->e3).data.b;
-      if ((eval(e->e1).data.b)) == true) { return (eval(e->e2).data.b) }
+      if ((eval(e->e1).data.b)) == true) { return (eval(e->e1).data.b) = (eval(e->e2).data.b) }
       else { return (eval(e->e3).data.b) }
     }
     void vist(equal_to_expr* e) {
