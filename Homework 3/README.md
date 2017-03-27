@@ -1,5 +1,7 @@
 # Homework 3 - Parser for Calc
 
+## Semantic Rules
+
 `expression ->` conditional expression
 
 `conditional-expression ->`     logical-or-expression ? expression : expression 
