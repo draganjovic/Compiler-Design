@@ -22,7 +22,7 @@
 5. Atom
 6. Xcode
 
-### **" Homework 2 - Implement a Lexer'**
+### **`Homework 2 - Implement a Lexer`**
 
 #### Overview
 
