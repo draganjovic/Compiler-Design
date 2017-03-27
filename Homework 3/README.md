@@ -2,13 +2,21 @@
 
 ## Semantic Rules
 
-`expression ->` (conditional expression)
+`expression ->` 
+      
+                              (conditional expression)
 
-`conditional-expression ->`     (logical-or-expression ? expression : expression)
+`conditional-expression ->`    
 
- `logical-or-expression ->`     (logical-or-expression || logical-and-expression)
+                              (logical-or-expression ? expression : expression)
+
+ `logical-or-expression ->`     
  
- `logical-and-expression ->`    (logical-and-expression && equality-expression)
+                              (logical-or-expression || logical-and-expression)
+ 
+ `logical-and-expression ->`    
+                    
+                              (logical-and-expression && equality-expression)
 
  `equality-expression ->`        
  
@@ -29,19 +37,21 @@
              
  `multiplicative-expression ->` 
  
-                                (multiplicative-expression * unary-expression)
-                                (multiplicative-expression / unary-expression)
-                                (multiplicative-expression % unary-expression)
+                              (multiplicative-expression * unary-expression)
+                              (multiplicative-expression / unary-expression)
+                              (multiplicative-expression % unary-expression)
                              
 `unary-expression ->`    
 
-                         (! unary-expression)
-                         (- unary-expression)
-                         (primary-expression)
+                              (! unary-expression)
+                              (- unary-expression)
+                              (primary-expression)
                     
-`primary-expression ->` (boolean-literal)
-                        (integer-literal)
-                        ( expression )
+`primary-expression ->` 
+
+                             (boolean-literal)
+                             (integer-literal)
+                             ( expression )
                    
                        
 
