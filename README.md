@@ -1,5 +1,5 @@
 # Spring 2017 - Compiler Design (3460:421)
-###**`Homework 1 - Implement an AST for a small language`**
+### **`Homework 1 - Implement an AST for a small language`**
 
 #### Overview
   This language can represent `two different kinds of types`: bool and int. Using expressions, this language can perform computations, ranging from addition to integer division. Aside from that, this language can also compare different expressions using the common operands such as greater than and less than, equal to, not equal to, and many of the other common ones seen in mathematics. Through the `visitor pattern` that was implemented, users can perform operations on the expressions that were defined by the abstract syntax tree. Along with the AST, the evaluate function was also implemented along with type verifying and printing. 
