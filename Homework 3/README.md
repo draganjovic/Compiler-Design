@@ -13,7 +13,9 @@
  `equality-expression ->`         (equality-expression == ordering-expression)
                                   (equality-expression != ordering=expression) 
 
- `ordering-expression ->`     (ordering-expression < additive-expression)
+ `ordering-expression ->`     
+ 
+                              (ordering-expression < additive-expression)
                               (ordering-expression > additive-expression)
                               (ordering-expression <= additive-expression)
                               (ordering-expression >= additive-expression)
