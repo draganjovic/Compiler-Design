@@ -1,6 +1,6 @@
-###**`Homework 2 - Implement a Lexer`**
+### **`Homework 2 - Implement a Lexer`**
 
-####Overview
+#### Overview
 
 The lexer should read the source code character by character, generate tokens, and then send them to the parser. For this assignment, I had to implement a lexer that defines the tokens representing the operators, boolean literals and integer literals for my language. I wrote two separate classes. One class was used exclusively to handle the different tokens that were needed. I handled that with a Token_kind enumeration, and for printing purposes I used a string array with all the token names written out as a string. The Token struct has three different kinds that can correspond to the Token_kind enumeration, which are non-literal tokens, boolean tokens, and integer tokens.
 
