@@ -1,4 +1,4 @@
-##Homework 3 - Parser for Calc
+# Homework 3 - Parser for Calc
 
 expression -> conditional expression
 
