@@ -1,17 +1,17 @@
 # Homework 3 - Parser for Calc
 
-#### `expression ->` conditional expression
+`expression ->` conditional expression
 
-#### `conditional-expression ->` logical-or-expression ? expression : expression 
+`conditional-expression ->` logical-or-expression ? expression : expression 
 
-#### `logical-or-expression ->` logical-or-expression || logical-and-expression
+ `logical-or-expression ->` logical-or-expression || logical-and-expression
 
-#### `logical-and-expression ->` logical-and-expression && equality-expression
+ `logical-and-expression ->` logical-and-expression && equality-expression
 
-#### `equality-expression ->` equality-expression == ordering-expression
+ `equality-expression ->` equality-expression == ordering-expression
                               equality-expression != ordering=expression
 
-#### `ordering-expression ->` ordering-expression < additive-expression
+ `ordering-expression ->` ordering-expression < additive-expression
                               ordering-expression > additive-expression
                               ordering-expression <= additive-expression
                               ordering-expression >= additive-expression
