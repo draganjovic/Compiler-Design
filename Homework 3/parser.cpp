@@ -1,6 +1,7 @@
 #include "parser.hpp"
 
 #include <iostream>
+#include <vector>
 
 Token * Parser::LookAhead(int count) {
   if(this->Eof())
