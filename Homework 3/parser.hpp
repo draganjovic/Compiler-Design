@@ -7,6 +7,8 @@
 #include "lexer.hpp"
 #include "token.hpp"
 #include "statement.hpp"
+#include <iostream>
+#include <vector>
 
 class Parser {
   private:
