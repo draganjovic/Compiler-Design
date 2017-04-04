@@ -5,6 +5,7 @@
 #include "token.hpp"
 #include "parser.hpp"
 #include "lexer.hpp"
+#include "statement.hpp"
 #include <iostream>
 
 int main() {
