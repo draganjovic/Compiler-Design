@@ -14,7 +14,7 @@ struct Parser {
     std::vector<Token*>::iterator it;
     Context cxt;
 
-    // returns true if there are no more tokens
+    // return if there are no more tokens
     bool Eof() { return it == t.end(); }
 
     // returns the kind of current token
