@@ -13,3 +13,12 @@ int main() {
       std::cout << " == " << eval(e).data.b << std::endl;
     }
   }
+
+    std::vector<Token*> t;
+    Token* tok = new Token();
+
+// parse tokens
+      Parser * parser = new Parser(*t, cxt);
+      cout << parser;
+
+}
