@@ -27,34 +27,10 @@ enum Token_kind {
   colon_tok,            //  :
   leftparen_tok,        //  (
   rightparen_tok,       //  )
+  var_d,                // var declaration
+  ident_tok,            // identifiers
   bool_tok,             // true/false
   int_tok,              // digit digit*
-};
-
-// Used for printing
-std::string Token_Names[22] = {
-  "Eof_tok",            // 0
-  "plus_tok",           // 1
-  "minus_tok",          // 2
-  "star_tok",           // 3
-  "slash_tok",          // 4
-  "percent_tok",        // 5
-  "and_tok",            // 6
-  "or_tok",             // 7
-  "bang_tok",           // 8
-  "equalequal_tok",     // 9
-  "notequal_tok",       // 10
-  "lessthan_tok",       // 11
-  "greaterthan_tok",    // 12
-  "lessthaneq_tok",     // 13
-  "greaterthaneq_tok",  // 14
-  "query_tok",          // 15
-  "colon_tok",          // 16
-  "leftparen_tok",      // 17
-  "rightparen_tok",     // 18
-  "true",               // 19
-  "false"               // 20
-  "int_tok",            // 21
 };
 
 struct Token {
