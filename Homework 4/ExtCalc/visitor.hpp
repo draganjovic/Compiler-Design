@@ -13,7 +13,11 @@ struct expr_visitor
     // Literal Expressions
     
     virtual void visit(const int_expr *) {}
-    virtual void visit(const bool_expr *) {} 
+    virtual void visit(const bool_expr *) {}
+    
+    // Conditional Expression
+    
+    virtual void visit(const if_then_else_expr *) {}
     
     // Unary Expressions
     
