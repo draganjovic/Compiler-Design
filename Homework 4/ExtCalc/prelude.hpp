@@ -15,6 +15,7 @@ struct expr_visitor;
 struct type;
 struct bool_type;
 struct int_type;
+struct ref_type;
 
 // expr decl
 struct expr;
@@ -23,6 +24,7 @@ struct expr;
 
 struct int_expr;
 struct bool_expr;
+struct ref_expr;
 
 // Conditional Expression
 
