@@ -24,6 +24,10 @@ struct expr;
 struct int_expr;
 struct bool_expr;
 
+// Conditional Expression
+
+struct if_then_else_expr;
+
 // Unary Expressions
 
 struct unary_expr; // initial unary expression decl
