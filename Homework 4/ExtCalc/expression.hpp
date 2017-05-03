@@ -11,6 +11,19 @@ struct expr
     virtual void accept(expr_visitor&) = 0;
 };
 
+// Reference Types
+struct ref_expr : expr
+{
+public:
+    ref_expr(ref value) : value_(value) {}
+    
+    ref value() const { return value_; }
+    void accept(expr_visitor & v) { v.visit(this); }
+
+private:
+    ref value_;
+};
+    
 // Literal Expressions
 
 struct int_expr : expr
