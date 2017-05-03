@@ -36,8 +36,11 @@ class symbol_table: std::unordered_map<std::string, symbol*>
 public:
     //Destructor
     ~symbol_table();
+    
+    // Preinstalls symbols
+    void install();
 
-    // The insertion function
+    // The Insertion function
     symbol * insert(std::string& , token_type); // Put a new symbol in the table
 
     symbol * operator[](std::string);
