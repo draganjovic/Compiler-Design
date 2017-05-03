@@ -8,7 +8,7 @@
 struct expr
 {
     virtual ~expr() {}
-    virtual void accept(expr_visitor&)  = 0;
+    virtual void accept(expr_visitor&) = 0;
 };
 
 // Literal Expressions
