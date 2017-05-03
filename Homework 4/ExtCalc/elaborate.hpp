@@ -13,6 +13,10 @@ struct elaboration_visitor : expr_visitor
 {
     elaboration_visitor() : the_type(nullptr) {}
     
+    // Reference Types
+    
+     void visit(const ref_expr *);
+    
     // Literal Expressions
     
     void visit(const int_expr *);
