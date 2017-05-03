@@ -1,4 +1,4 @@
-@orig_str = internal constant [29 x i8] 
+@orig_str = internal constant [29 x i8] c
 @copy_str = internal global [29 x i8] zeroinitializer
 
 ; Print function declaration
@@ -35,7 +35,6 @@ strlen.end:
     ;return value
     ret i32 %final_len
 }
-
 
 define i32
 @strcpy(i8* %src, i8* %dest)
