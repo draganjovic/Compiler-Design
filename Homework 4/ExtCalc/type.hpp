@@ -3,7 +3,6 @@
 
 #include "visitor.hpp"
 
-
 struct type
 {
     virtual ~type() {}
