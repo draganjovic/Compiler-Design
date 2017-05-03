@@ -1,11 +1,11 @@
 #ifndef TOKEN_HPP
 #define TOKEN_HPP
 
-#include "ast.hpp"
-
 #include <iostream>
 #include <vector>
 #include <string>
+
+#include "ast.hpp"
 
 enum Token_kind {
   Eof_tok,              //  End of file, 0, null
