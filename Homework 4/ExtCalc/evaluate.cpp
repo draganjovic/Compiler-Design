@@ -3,6 +3,13 @@
 
 using namespace std;
 
+// Reference Types
+
+ void eval_visitor::visit(const ref_expr *)
+ {
+     
+ }
+
 // Literal Expressions
 
 void eval_visitor::visit(const int_expr * e)
