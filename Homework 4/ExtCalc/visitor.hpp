@@ -10,6 +10,10 @@ struct type_visitor;
 
 struct expr_visitor
 {
+    // Reference Types
+    
+    virtual void visit(const ref_expr *) {}
+    
     // Literal Expressions
     
     virtual void visit(const int_expr *) {}
