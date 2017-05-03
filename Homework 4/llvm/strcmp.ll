@@ -9,10 +9,8 @@
 @true = internal constant [5 x i8] c"true\00"
 @false = internal constant [6 x i8] c"false\00"
 
-
 ; Print function declaration
 declare i32 @puts(i8*)
-
 
 define i32
 @strlen(i8* %str)
@@ -106,7 +104,6 @@ strcmp.true:
     call i32 @puts(i8* getelementptr inbounds ([5 x i8]* @true, i32 0, i32 0))
     ; return true
     ret i1 1
-
 }
 
 define i32
