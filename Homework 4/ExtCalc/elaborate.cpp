@@ -5,7 +5,6 @@
 
 #include <sstream>
 
-
 // Unary Expressions
 
 void elaboration_visitor::visit(const pos_expr * p)
