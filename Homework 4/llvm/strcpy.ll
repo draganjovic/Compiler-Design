@@ -76,7 +76,7 @@ strcpy.body:
 strcpy.end:
     ;load offset
     %end_idx = load i32* %idx
-    ; increment
+    ;increment
     %end_inc_idx = add i32 %end_idx, 1
     ;get a pointer to the end of the dest string to null terminate the string
     %end_ptr = getelementptr inbounds i8* %dest, i32 %end_idx
