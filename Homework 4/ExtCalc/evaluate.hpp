@@ -6,7 +6,11 @@
 #include "ast.hpp"
 
 struct eval_visitor : expr_visitor
-{   
+{
+    // Reference Types
+    
+    void visit(const ref_expr *);
+
     // Literal Expressions
     
     void visit(const int_expr *);
@@ -40,9 +44,11 @@ struct eval_visitor : expr_visitor
 
     int int_value;
     bool bool_value;
+    int ref_value;
 };
 
 int int_evaluate(expr * ast);
 bool bool_evaluate(expr * ast);
+int ref_evaluate(expr * ast);
 
 #endif
