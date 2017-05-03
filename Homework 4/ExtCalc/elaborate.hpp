@@ -15,7 +15,7 @@ struct elaboration_visitor : expr_visitor
     
     // Reference Types
     
-     void visit(const ref_expr *);
+    void visit(const ref_expr *);
     
     // Literal Expressions
     
