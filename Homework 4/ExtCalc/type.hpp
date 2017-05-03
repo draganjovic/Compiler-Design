@@ -5,8 +5,12 @@
 
 struct type
 {
+    struct Visitor;
+    
     virtual ~type() {}
     virtual void accept(type_visitor &) const = 0;
+    
+    virtual type const* ref() const;
 };
 
 struct int_type : type
