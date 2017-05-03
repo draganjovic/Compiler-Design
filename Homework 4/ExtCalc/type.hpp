@@ -23,4 +23,19 @@ struct bool_type : type
     void accept(type_visitor & v) const { v.visit(this); }
 };
 
+struct ref_type : type
+{
+  ref_type(type const* t)
+    : first(t)
+  { }
+
+  void accept(type_visitor & v) const { v.visit(this); };
+
+  virtual type const* ref() const;
+
+  Type const* type() const { return first; }
+
+  Type const* first;
+};
+
 #endif
