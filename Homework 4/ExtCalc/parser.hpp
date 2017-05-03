@@ -13,7 +13,7 @@ class Parser {
   private:
     std::vector<Token*> t;
     std::vector<Token*>::iterator it;
-    Context* cxt;
+    context* cxt;
 
     // return if there are no more tokens
     bool Eof() { return it == t.end(); }
@@ -40,16 +40,16 @@ class Parser {
     Token * Require(Token_kind k);
 
     // Parse functions
-    Expr * ParseExpr();      // expression
-    Expr * ParseCond();      // conditional expression
-    Expr * ParseOr();        // logical or expression
-    Expr * ParseAnd();       // logical and expression
-    Expr * ParseEqual();     // equality expression
-    Expr * ParseOrdering();  // relational expression
-    Expr * ParseAdd();       // additive expression
-    Expr * ParseMult();      // multiplicative expression
-    Expr * ParseUnary();     // unary expression
-    Expr * ParsePrimary();   // boolean and integer literals
+    expr * ParseExpr();      // expression
+    expr * ParseCond();      // conditional expression
+    expr * ParseOr();        // logical or expression
+    expr * ParseAnd();       // logical and expression
+    expr * ParseEqual();     // equality expression
+    expr * ParseOrdering();  // relational expression
+    expr * ParseAdd();       // additive expression
+    expr * ParseMult();      // multiplicative expression
+    expr * ParseUnary();     // unary expression
+    expr * ParsePrimary();   // boolean and integer literals
 
     // Statements
     Statement * ParseStmt();       // statement
@@ -61,7 +61,7 @@ class Parser {
     Declaration * ParseVariable_Decl();
 
     // Types
-    const Type * ParseType();
+    const type * ParseType();
 
   public:
     Statement * Parse() { return ParseStmt(); }
