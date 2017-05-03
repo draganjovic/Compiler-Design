@@ -7,7 +7,7 @@ using namespace std;
 
  void eval_visitor::visit(const ref_expr *)
  {
-     
+     ref_value = e->value();
  }
 
 // Literal Expressions
@@ -125,4 +125,13 @@ bool bool_evaluate(expr * ast)
     eval_visitor v;
     ast->accept(v);
     return v.bool_value;
+}
+
+// Reference Types
+
+int ref_evaluate(expr * ast)
+{
+    eval_visitor v;
+    ast->accept(v);
+    returm v.ref_value;
 }
