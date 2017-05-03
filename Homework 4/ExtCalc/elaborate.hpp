@@ -17,6 +17,9 @@ struct elaboration_visitor : expr_visitor
     
     void visit(const int_expr *);
     void visit(const bool_expr *);
+    
+    // Conditional Expression
+    void visit(const if_then_else_expr *);
 
     // Unary Expressions
     
