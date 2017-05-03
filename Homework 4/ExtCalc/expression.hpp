@@ -37,6 +37,18 @@ private:
     bool value_;
 };
 
+// Conditional Expression
+
+struct if_then_else_expr : expr
+{
+    virtual ~if_then_else_expr()
+    {}
+    if_then_else_expr(expr * e1, expr * e2, expr * e3) : expr(e1, e2, e3) {}
+    
+    void accept(expr_visitor & v)
+    { v.visit(this); }
+};
+
 // Unary Expressions
 
 struct unary_expr : expr
