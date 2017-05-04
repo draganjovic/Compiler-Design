@@ -11,6 +11,7 @@ struct type
     virtual void accept(type_visitor &) const = 0;
     
     virtual type const* ref() const;
+    virtual type const* func() const;
 };
 
 struct int_type : type
@@ -36,6 +37,17 @@ struct ref_type : type
   Type const* type() const { return first; }
 
   Type const* first;
+};
+
+struct func_type : type
+{
+   func_type(type const* t)
+    : t1, t2, t3,..., tn
+  { }
+
+  void accept(type_visitor & v) const { v.visit(this); };
+
+  virtual type const* func() const;
 };
 
 #endif
