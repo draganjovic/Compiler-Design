@@ -9,7 +9,7 @@
 @true = internal constant [5 x i8] c"true\00"
 @false = internal constant [6 x i8] c"false\00"
 
-; Print function declaration
+;Print function declaration
 declare i32 @puts(i8*)
 
 define i32
@@ -44,7 +44,6 @@ strlen.end:
     ret i32 %final_len
 }
 
-
 define i1
 @strcmp(i8* %str_a, i8* %str_b, i8* %msg)
 {
@@ -54,13 +53,11 @@ define i1
     %length_a = call i32 @strlen(i8* %str_a)
     ; length of string b
     %length_b = call i32 @strlen(i8* %str_b)
-    ; the reason I don't compare and branch here is because i don't know
-    ; how to continue from a branch
     ; an index(offset froms start) counter to iterate over the string
     %idx = alloca i32
     ; tiresomly initialize the idx counter
     store i32 0, i32* %idx
-    ; know I'm comparing the lengths of the two strings
+    ; comparing the lengths of the two strings
     %len_cmp = icmp eq i32 %length_a, %length_b
     ; if they are not equal then branch to false else branch to body
     br i1 %len_cmp, label %strcmp.body, label %strcmp.false
