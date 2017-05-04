@@ -24,6 +24,20 @@ public:
 private:
     ref value_;
 };
+
+// Function Types
+
+struct func_expr : expr
+{
+public:
+    func_expr(func value) : value_(value) {}
+    
+    func value() const { return value_; }
+    void accept(expr_visitor & v) { v.visit(this); }
+
+private:
+    func value_;
+};
     
 // Literal Expressions
 
