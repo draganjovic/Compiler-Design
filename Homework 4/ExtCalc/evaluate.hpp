@@ -7,9 +7,10 @@
 
 struct eval_visitor : expr_visitor
 {
-    // Reference Types
+    // Reference Types and Function Types
     
     void visit(const ref_expr *);
+    void visit(const func_expr *);
 
     // Literal Expressions
     
@@ -45,10 +46,12 @@ struct eval_visitor : expr_visitor
     int int_value;
     bool bool_value;
     int ref_value;
+    int func_value, bool func_value;
 };
 
 int int_evaluate(expr * ast);
 bool bool_evaluate(expr * ast);
 int ref_evaluate(expr * ast);
+int func_evaluate(expr * ast), bool func_evaluate(expr * ast);
 
 #endif
