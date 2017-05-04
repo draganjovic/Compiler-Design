@@ -10,6 +10,13 @@ using namespace std;
      ref_value = e->value();
  }
 
+// Function Types
+
+ void eval_visitor::visit(const func_expr *)
+ {
+     func_value = e->value();
+ }
+
 // Literal Expressions
 
 void eval_visitor::visit(const int_expr * e)
@@ -130,6 +137,15 @@ bool bool_evaluate(expr * ast)
 // Reference Types
 
 int ref_evaluate(expr * ast)
+{
+    eval_visitor v;
+    ast->accept(v);
+    returm v.ref_value;
+}
+
+// Function Types
+
+int func_evaluate(expr * ast)
 {
     eval_visitor v;
     ast->accept(v);
