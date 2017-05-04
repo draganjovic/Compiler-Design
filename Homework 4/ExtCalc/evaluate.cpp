@@ -14,7 +14,7 @@ using namespace std;
 
  void eval_visitor::visit(const func_expr *)
  {
-     func_value = e->value();
+     func_value = e1->value(), e2->value(), e3->value();
  }
 
 // Literal Expressions
