@@ -16,6 +16,7 @@ struct type;
 struct bool_type;
 struct int_type;
 struct ref_type;
+struct func_type;
 
 // expr decl
 struct expr;
