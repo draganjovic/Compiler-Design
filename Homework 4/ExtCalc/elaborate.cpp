@@ -9,7 +9,12 @@
  
 void elaboration_visitor::visit(const ref_expr * r)
 { the_type = new ref_type(); }
-      
+
+// Function Types
+
+void elaboration_visitor::visit(const func_expr * f)
+{ the_type = new ref_type(); }
+
 // Unary Expressions
 
 void elaboration_visitor::visit(const pos_expr * p)
