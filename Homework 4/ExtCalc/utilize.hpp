@@ -8,9 +8,10 @@
 
 struct expr_type_visitor : expr_visitor
 {
-    // Reference Types
+    // Reference Types and Function Types
     
     void visit(const ref_expr *) { the_type = "ref_expr"; }
+    void visit(const func_expr *) { the_type = "func_expr"; }
     
     // Literal Expressions
     
@@ -55,6 +56,7 @@ struct type_type_visitor : type_visitor
     void visit( const bool_type * ) { the_type = "bool"; }
     void visit( const int_type * )  { the_type = "int"; }
     void visit( const ref_type * ) { the_type = "reference"; }
+    void visit( const func_type * ) { the_type = "function"; }
     std::string the_type;
 };
 
