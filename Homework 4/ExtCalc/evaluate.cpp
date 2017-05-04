@@ -140,7 +140,7 @@ int ref_evaluate(expr * ast)
 {
     eval_visitor v;
     ast->accept(v);
-    returm v.ref_value;
+    return v.ref_value;
 }
 
 // Function Types
@@ -149,5 +149,5 @@ int func_evaluate(expr * ast)
 {
     eval_visitor v;
     ast->accept(v);
-    returm v.ref_value;
+    return v.ref_value;
 }
