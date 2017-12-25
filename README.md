@@ -1,5 +1,7 @@
 # University of Akron - Compiler Design (3460:421)
 
+#### Assignments
+
 Homework 1 : Implement an AST for a small language
 
 Homework 2 : Implement a Lexer
