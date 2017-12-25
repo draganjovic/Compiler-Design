@@ -6,6 +6,15 @@ The parser is defined in parser.hpp and parser.cpp. The parser is an object with
 
 The LookAhead() function returns the kind of current token that has been sent from the lexer. The MatchIf() function compares the token kind, and if the current token has the given kind, then it gets consumed. If it doesn’t have the given kind, then the Match() function comes in and gives an error. Lastly, the Require() function made sure that the token had its given kind and that it consumed.
 
+### Tools used
+ 
+1. MacBook Pro (Retina, 13-inch, Early 2015)
+2. Dual Monitor Setup
+3. Terminal
+4. Emacs
+5. Atom
+6. Xcode
+
 ## Semantic Rules
 
 `expression ->` 
