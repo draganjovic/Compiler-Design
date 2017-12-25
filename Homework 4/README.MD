@@ -16,7 +16,7 @@ Lastly, the goal of my language is to provide a compiler that can create LLVM de
 
 This has been a very fun project to work on throughout the semester. I have learned a lot thinking back to when I had my first assignment versus this last assignment. I had no idea what I was doing with the first assignment when I had to create an AST for the language. A few months later and now I have learned how to implement a parser and a lexer and how to even extend my simple calculator that I originally created into a more complex sophisticated language compiler that can support different types and different expressions. There is still a lot that I need to learn. This was a tough assignment. It might not be all 100% correct, but I tried my best and I learned a lot doing so. In the future, I plan on implementing the above and beyond things that my professor recommended doing within the assignments.
 
-### Tools used
+## Tools used
  
 1. MacBook Pro (Retina, 13-inch, Early 2015)
 2. Dual Monitor Setup
