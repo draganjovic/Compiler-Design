@@ -1,6 +1,6 @@
 # University of Akron - Compiler Design (3460:421)
 
-#### Assignments
+## Assignments
 
 Homework 1 : Implement an AST for a small language
 
@@ -10,7 +10,7 @@ Homework 3 : Implement a Parser
 
 Homework 4 : Extended Calc and LLVM
 
-#### Tools used
+## Tools used
  
 1. MacBook Pro (Retina, 13-inch, Early 2015)
 2. Dual Monitor Setup
